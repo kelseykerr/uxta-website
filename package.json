@@ -1,0 +1,31 @@
+{
+  "name": "nearby-site",
+  "title": "Nearby Site",
+  "homepage": "http://thenearbyapp.com",
+  "author": "Iuxta, Inc.",
+  "devDependencies": {
+    "angular-scroll": "^1.0.1",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-header": "^1.8.8",
+    "gulp-install": "^0.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-serve": "^1.4.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-watch": "^4.3.11",
+    "jquery": "^1.11.3",
+    "jshint": "^2.9.3"
+  },
+  "dependencies": {
+    "simple-line-icons": "^2.3.2"
+  }
+}
