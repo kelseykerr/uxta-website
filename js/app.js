@@ -19,10 +19,6 @@ angular
   ])
 
   .config(function($stateProvider, $locationProvider) {
-    $locationProvider.html5Mode({
-      enabled: true
-    });
-
     $stateProvider
       .state('home', {
         url: '/',
@@ -39,7 +35,7 @@ angular
         templateUrl: '/views/faq.html',
         controller: 'homeCtrl'
       });
-
+    $locationProvider.html5Mode(true);
   })
   .controller('homeCtrl', function($scope) {
     // Highlight the top nav as scrolling occurs
