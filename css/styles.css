@@ -581,7 +581,6 @@ video {
 }
 
 .faq {
-  margin-top: 70px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -594,4 +593,12 @@ video {
 
 .center-text {
   text-align: center;
+}
+
+.color-blue {
+  color: #4EE2EC;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
 }
