@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name anglerfishApp
- * @description
- * # anglerfishApp
- *
- * Main module of the application.
- */
 angular
   .module('nearbySite', [
     'ngAnimate',
