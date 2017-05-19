@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse " uib-collapse="isCollapsed">
       <ul class="nav navbar-nav navbar-right ">
         <li du-scrollspy="home">
-          <a class="page-scroll" ui-sref="home" du-smooth-scroll>Home</a>
+          <a class="page-scroll" ui-sref="home" du-smooth-scroll ng-click="nav.goToTop()">Home</a>
         </li>
         <li>
-          <a class="page-scroll " ui-sref="faq">FAQ</a>
+          <a class="page-scroll " ui-sref="faq" ng-click="nav.goToTop()">FAQ</a>
         </li>
       </ul>
     </div>

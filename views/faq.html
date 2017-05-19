@@ -12,10 +12,10 @@
     <div class="collapse navbar-collapse " uib-collapse="isCollapsed">
       <ul class="nav navbar-nav navbar-right ">
         <li du-scrollspy="home">
-          <a class="page-scroll" ui-sref="home" du-smooth-scroll>Home</a>
+          <a class="page-scroll" ui-sref="home" ng-click="nav.goToTop()" du-smooth-scroll>Home</a>
         </li>
         <li>
-          <a class="page-scroll " ui-sref="privacy">privacy</a>
+          <a class="page-scroll " ui-sref="privacy" ng-click="nav.goToTop()">privacy</a>
         </li>
       </ul>
     </div>
@@ -42,7 +42,7 @@
   </div>
   <div>
     <h3 class="color-blue">How do I get paid?</h3>
-    <p>Payments are handled through the app using Stripe. Once you have entered your bank info, you should see payments within a couple days of a completed transaction.</p>
+    <p>Payments are handled through the app using Stripe. Your first transaction may take about a week to appear in your bank account, but after that you should typically see credits within a couple days of a completed transaction.</p>
   </div>
   <div>
     <h3 class="color-blue">What if someone doesn’t return my item?</h3>
