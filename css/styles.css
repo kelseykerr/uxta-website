@@ -602,3 +602,12 @@ video {
 .margin-top-40 {
   margin-top: 40px;
 }
+
+.app-store-btn {
+  width: 155px;
+  height: 60px;
+}
+
+.download-btns {
+  margin-top: 50px;
+}
