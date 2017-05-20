@@ -1,4 +1,4 @@
-<nav nav-scroll ng-controller="navCtrl" ng-class="{affix:shouldBeAffixed}" id="mainNav" class="navbar navbar-default navbar-fixed-top ">
+<nav nav-scroll ng-controller="navCtrl" role="navigation" ng-class="{affix:shouldBeAffixed}" id="mainNav" class="navbar navbar-default navbar-fixed-top ">
   <div class="container ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,7 +9,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse " id="nearby-navbar " uib-collapse="isCollapsed">
+    <div class="collapse navbar-collapse " ng-class="{in: !isCollapsed}" id="nearby-navbar " uib-collapse="isCollapsed">
       <ul class="nav navbar-nav navbar-right ">
         <li du-scrollspy="features">
           <a class="page-scroll" href="/#features" du-smooth-scroll>Features</a>

@@ -9,7 +9,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse " uib-collapse="isCollapsed">
+    <div class="collapse navbar-collapse " ng-class="{in: !isCollapsed}" uib-collapse="isCollapsed">
       <ul class="nav navbar-nav navbar-right ">
         <li du-scrollspy="home">
           <a class="page-scroll" ui-sref="home" du-smooth-scroll ng-click="nav.goToTop()">Home</a>

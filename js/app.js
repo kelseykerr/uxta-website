@@ -5,7 +5,7 @@ angular
     'ngAnimate',
     'ngCookies',
     'ui.router',
-    'ui.bootstrap',
+    /*'ui.bootstrap',*/
     'ngTouch',
     'duScroll'
   ])
