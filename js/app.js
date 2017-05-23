@@ -26,6 +26,11 @@ angular
         url: '/faq',
         templateUrl: '/views/faq.html',
         controller: 'homeCtrl'
+      })
+      .state('terms', {
+        url: '/terms',
+        templateUrl: '/views/tos.html',
+        controller: 'homeCtrl'
       });
     $locationProvider.html5Mode(true);
   })

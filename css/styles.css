@@ -587,9 +587,11 @@ video {
   margin-right: 100px;
 }
 
-.faq {
-  margin-left: 100px;
-  margin-right: 100px;
+@media (min-width: 768px) {
+  .faq {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .center-pin-img {
@@ -617,4 +619,8 @@ video {
 
 .download-btns {
   margin-top: 50px;
+}
+
+.fb-like {
+  text-align: center;
 }
