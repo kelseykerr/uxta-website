@@ -583,12 +583,14 @@ video {
 
 .privacy-policy {
   margin-top: 70px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 @media (min-width: 768px) {
   .faq {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .privacy-policy {
     margin-left: 100px;
     margin-right: 100px;
   }
