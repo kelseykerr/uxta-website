@@ -394,7 +394,7 @@ section.contact h2 i {
 }
 
 section.contact ul.list-social {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 section.contact ul.list-social li a {
@@ -405,6 +405,14 @@ section.contact ul.list-social li a {
   font-size: 40px;
   border-radius: 100%;
   color: white;
+}
+
+section.contact ul.list-social li.social-mail a {
+  background-color: #4EE2EC;
+}
+
+section.contact ul.list-social li.social-mail a:hover {
+  background-color: #42dce6;
 }
 
 section.contact ul.list-social li.social-twitter a {
@@ -473,7 +481,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: #323232;
 }
 
-.text-white {
+.email-text {
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.email-text:hover {
   color: #ffffff;
 }
 
