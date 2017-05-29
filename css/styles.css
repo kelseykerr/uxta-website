@@ -639,3 +639,12 @@ video {
 .fb-like {
   text-align: center;
 }
+
+.giveaway {
+  margin-top: -50px;
+  background-color: #4EE2EC;
+}
+
+.text-white {
+  color: #ffffff;
+}
