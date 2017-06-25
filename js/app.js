@@ -31,11 +31,6 @@ angular
         url: '/terms',
         templateUrl: '/views/tos.html',
         controller: 'homeCtrl'
-      })
-      .state('raffle', {
-        url: '/raffle',
-        templateUrl: '/views/raffle.html',
-        controller: 'homeCtrl'
       });
     $locationProvider.html5Mode(true);
   })

@@ -431,6 +431,14 @@ section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
 }
 
+section.contact ul.list-social li.social-instagram a {
+  background-color: #bc2a8d;
+}
+
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #8a3ab9;
+}
+
 section.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
 }
@@ -625,6 +633,14 @@ video {
 
 .margin-top-40 {
   margin-top: 40px;
+}
+
+.margin-top-70 {
+  margin-top: 70px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
 }
 
 .app-store-btn {
