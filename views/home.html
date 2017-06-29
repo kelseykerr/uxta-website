@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" ng-class="{collapsed: isCollapsed}" data-target="#nearby-navbar ">
               <span class="sr-only ">Toggle navigation</span> Menu <i class="fa fa-bars "></i>
           </button>
-      <a class="navbar-brand page-scroll " href="#top" du-smooth-scroll><img src="img/nearby_pin_blue.png " /></a>
+      <a class="navbar-brand page-scroll " ng-click="nav.goToTop()" du-smooth-scroll><img src="img/nearby_pin_blue.png " /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,14 +33,16 @@
   <!-- /.container-fluid -->
 </nav>
 
-<header id="">
-  <div class="container" du-scroll-container id="top">
-    <div class="row">
+<header id="features">
+  <div class="row header-content" du-scroll-container>
+    <div class="center-bottom">
+      <a href="/inventory"><button class="secondary-btn">what can I rent today?</button></a>
+    </div>
+    <!--<div class="row">
       <div class="col-sm-7">
         <div class="header-content">
           <div class="header-content-inner">
             <img src="img/nearby_logo_1_white_large.png" />
-
             <h2>Make money off the stuff you have, borrow the things you don't.</h2>
           </div>
         </div>
@@ -53,7 +55,7 @@
                 <!--<video controls="" autoplay class="video">
                                   <source src="img/nearby_promo_03_15.mp4" type="video/mp4" />
                               </video>-->
-                <img src="img/ios_home_05092017.png" class="img-responsive" alt="">
+    <!--<img src="img/ios_home_05092017.png" class="img-responsive" alt="">
               </div>
               <div class="button">
               </div>
@@ -61,7 +63,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </header>
 
@@ -70,8 +72,8 @@
     <h2>Help us reach our goal on Kickstarter!</h2>
   </div>
   <div class="container temp-kickstarter">
-    <iframe src="https://www.kickstarter.com/projects/1739597992/nearby-a-sharing-economy-app-for-your-stuff/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no" style="margin-right: 15px;"></iframe>
-    <iframe width="800" height="450" src="https://www.kickstarter.com/projects/1739597992/nearby-a-sharing-economy-app-for-your-stuff/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+    <iframe src="https://www.kickstarter.com/projects/1739597992/nearby-a-sharing-economy-app-for-your-stuff/widget/card.html?v=2" width="220" height="420" frameborder="0" style="margin-right: 15px;"></iframe>
+    <iframe width="800" height="450" src="https://www.kickstarter.com/projects/1739597992/nearby-a-sharing-economy-app-for-your-stuff/widget/video.html" frameborder="0"> </iframe>
   </div>
 </section>
 

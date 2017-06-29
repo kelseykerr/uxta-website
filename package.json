@@ -26,6 +26,7 @@
     "jshint": "^2.9.3"
   },
   "dependencies": {
+    "angulargrid": "^0.6.5",
     "simple-line-icons": "^2.3.2"
   }
 }

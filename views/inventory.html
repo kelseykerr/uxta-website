@@ -1,0 +1,71 @@
+<nav nav-scroll ng-controller="navCtrl" role="navigation" id="mainNav" class="navbar navbar-default navbar-fixed-top affix">
+  <div class="container ">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" ng-class="{collapsed: isCollapsed}" data-target="#nearby-navbar ">
+              <span class="sr-only ">Toggle navigation</span> Menu <i class="fa fa-bars "></i>
+          </button>
+      <a class="navbar-brand page-scroll" ui-sref="home" du-smooth-scroll><img src="img/nearby_pin_blue.png " /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " ng-class="{in: !isCollapsed}" id="nearby-navbar " uib-collapse="isCollapsed">
+      <ul class="nav navbar-nav navbar-right ">
+        <li du-scrollspy="features">
+          <a class="page-scroll" href="/#features" du-smooth-scroll>Features</a>
+        </li>
+        <li du-scrollspy="download">
+          <a class="page-scroll " href="/#download" du-smooth-scroll>Download</a>
+        </li>
+        <li du-scrollspy="contact">
+          <a class="page-scroll " href="/#contact" du-smooth-scroll>Contact</a>
+        </li>
+        <li>
+          <a class="page-scroll" ng-click="nav.goToTop()" href="/faq ">FAQ</a>
+        </li>
+        <li>
+          <a class="page-scroll " href="/privacy" ng-click="nav.goToTop()">Privacy</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<section class="container-fluid">
+  <div class="section-heading text-center margin-bottom-45 margin-top-70">
+    <h3>See what people are sharing on Nearby</h3>
+  </div>
+  <div class="zip-input">
+    <div class="input-group input-group-lg">
+      <input type="number" name="zip" class="form-control" ng-model="inventory.zip" placeholder="Enter zip code">
+      <span class="input-group-btn">
+                        <button class="btn btn-default" ng-click="inventory.loadItems()" name="search"
+                                id="mc-embedded-subscribe">
+                                <i class="icon-magnifier text-tertiary"></i>
+                        </button>
+                    </span>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <div ng-if="inventory.notAvailable" class="section-heading text-center margin-bottom-45 margin-top-150">
+      <h3>Nearby is not available in this location yet</h3>
+    </div>
+    <div ng-if="inventory.noResults" class="section-heading text-center margin-bottom-45 margin-top-150">
+      <h3>No results found. Download Nearby today and list your items!</h3>
+    </div>
+    <div ng-if="inventory.items !== undefined && inventory.items.length > 0" class="cards-wrap" angular-grid="inventory.items" ag-grid-width="300" ag-gutter-size="6" ag-id="galleryPhotos">
+      <div class="card" ng-model="inventory.items" ng-repeat="item in inventory.items track by $index">
+        <div class="photo">
+          <img class="grid-img with-description" ng-src="{{inventory.getPhotoUrl(item)}}">
+        </div>
+        <div class="inside">
+          <div class="description">
+            {{item.itemName}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
