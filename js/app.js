@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('nearbySite', [
+  .module('uxtaSite', [
     'ngAnimate',
     'ngCookies',
     'ui.router',
