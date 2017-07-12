@@ -7,8 +7,7 @@ angular
     'ui.router',
     /*'ui.bootstrap',*/
     'ngTouch',
-    'duScroll',
-    'angularGrid'
+    'duScroll'
   ])
 
   .config(function($stateProvider, $locationProvider) {
@@ -31,11 +30,6 @@ angular
       .state('terms', {
         url: '/terms',
         templateUrl: '/views/tos.html',
-        controller: 'homeCtrl'
-      })
-      .state('iventory', {
-        url: '/inventory',
-        templateUrl: '/views/inventory.html',
         controller: 'homeCtrl'
       });
     $locationProvider.html5Mode(true);
